@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Animais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Animais</h1>
+        <nav>
+            <a href="index.html">Início</a>
+        </nav>
+    </header>
+    <main>
+        <form id="animal-form">
+            <label for="nome-animal">Nome do Animal:</label>
+            <input type="text" id="nome-animal" name="nome-animal" required>
+
+            <label for="tipo-animal">Tipo de Animal (Ex.: Cachorro, Gato):</label>
+            <input type="text" id="tipo-animal" name="tipo-animal" required>
+
+            <label for="raca-animal">Raça:</label>
+            <input type="text" id="raca-animal" name="raca-animal" required>
+
+            <label for="idade-animal">Idade:</label>
+            <input type="number" id="idade-animal" name="idade-animal" required>
+
+            <!-- Novos Campos -->
+
+            <label for="sexo-animal">Sexo:</label>
+            <select id="sexo-animal" name="sexo-animal" required>
+                <option value="">Selecione</option>
+                <option value="Macho">Macho</option>
+                <option value="Fêmea">Fêmea</option>
+            </select>
+
+            <label for="porte-animal">Porte:</label>
+            <select id="porte-animal" name="porte-animal" required>
+                <option value="">Selecione</option>
+                <option value="Pequeno">Pequeno</option>
+                <option value="Médio">Médio</option>
+                <option value="Grande">Grande</option>
+            </select>
+
+            <label for="peso-animal">Peso (kg):</label>
+            <input type="number" id="peso-animal" name="peso-animal" step="0.1" required>
+
+            <label for="cor-animal">Cor/Marcação:</label>
+            <input type="text" id="cor-animal" name="cor-animal">
+
+            <label for="data-nascimento-animal">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento-animal" name="data-nascimento-animal">
+
+            <label for="historico-medico">Histórico Médico:</label>
+            <textarea id="historico-medico" name="historico-medico" rows="3" placeholder="Descreva histórico de doenças ou condições crônicas"></textarea>
+
+            <label for="vacinas-animal">Vacinas:</label>
+            <textarea id="vacinas-animal" name="vacinas-animal" rows="3" placeholder="Ex.: Raiva - 10/10/2022"></textarea>
+
+            <label for="castrado-animal">Status de Castração:</label>
+            <select id="castrado-animal" name="castrado-animal" required>
+                <option value="">Selecione</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+            </select>
+
+            <label for="ultima-visita">Data da Última Visita ao Veterinário:</label>
+            <input type="date" id="ultima-visita" name="ultima-visita">
+
+            <label for="alergias-animal">Alergias Conhecidas:</label>
+            <textarea id="alergias-animal" name="alergias-animal" rows="3" placeholder="Descreva alergias a medicamentos ou alimentos"></textarea>
+
+            <label for="comportamento-animal">Comportamento:</label>
+            <input type="text" id="comportamento-animal" name="comportamento-animal" placeholder="Ex.: Calmo, ansioso, agressivo">
+
+            <label for="foto-animal">Foto do Animal:</label>
+            <input type="file" id="foto-animal" name="foto-animal" accept="image/*">
+
+            <!-- Botão de Enviar -->
+            <button type="submit">Cadastrar Animal</button>
+        </form>
+    </main>
+</body>
+</html>
